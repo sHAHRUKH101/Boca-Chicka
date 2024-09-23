@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@1,600&family=Nunito+Sans:ital,wght@0,300;1,200&family=Patua+One&family=Poppins&family=Raleway:wght@500&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@1,600&family=Nunito+Sans:ital,wght@0,300;1,200&family=Patua+One&family=Poppins&family=Raleway:wght@500&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #a3a3a3;
+    overflow-x: hidden;
+    line-height: 1.6;
+    background-color: #1C1B19;
+}
+nav{
+    position: relative;
+    z-index: 10;
+    height: 10rem;
+    margin: 2rem 5rem 0 5rem;
+    background-color: #353530;
+}
+.logo_img{
+    width: 20rem;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size: 1.6rem;
+    margin: 0 2rem;
+    color: white;
+    font-family: Prata;
+    font-weight: 700;
+}
+.navbar-nav .nav-item .nav-link:focus,.nav-link.active{
+    color:#f9d261 !important;
+}
+.navbar-toggler-icon i{
+    color: #f9d261;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.sidebar{
+    height: 100%;
+    margin-top: 3rem;
+}
+.sidebar a span{
+
+    margin-right: 4rem;
+}
+.slideshow{
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleItem 20s infinite;
+}
+.slideshow-item:nth-child(1){
+    animation-delay: 0s;
+}
+.slideshow-item:nth-child(2){
+    animation-delay: 10s;
+}
+@keyframes cycleItem {
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0; 
+    }
+}
+.hero .dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.sidebar a {
+    margin: 9rem 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    display: block;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+.sidebar1 a{
+    margin: 9rem 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    display: block;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    height: 18rem;
+    width: 20rem;
+}
+.sidebar a:hover,.sidebar1 a:hover{
+    color: #f9d261;
+}
+.hero{
+    padding: 0 0 4rem 0;
+}
+.hero_main{
+    margin-top: 5rem;
+}  
+.hero_main h1{
+    font-size:7rem;
+    text-transform: capitalize;
+    /* color: white; */
+    font-family: Prata;
+}
+.hero_main .buttons button{
+    margin: 0 1.5rem;
+    letter-spacing: 1px;
+    padding: 2rem 4rem;
+}
+.hero_main .buy_now{ 
+    background-color: #f9d261;
+    /* border: none; */
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: 0.7s;
+}
+.hero_main .buy_now:hover{
+    background-color: transparent;
+    color: #f9d261;
+    border: 2px solid #f9d261;
+}
+.hero_main .explore_now{
+    background-color: transparent;
+    border: 2px solid #353530;
+    font-size: 1rem;
+    color: #a3a3a3;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+.hero_main .explore_now:hover{
+    background-color: #f9d261;
+    color: black;
+    border: 2px solid #f9d261;
+}
+.hero_img{
+    position: relative;
+    right: 0;
+    margin-top: 3rem;
+}
+#gallery{
+    background-color: #353530;
+    padding: 7rem;
+}
+#gallery h1{
+    font-size: 5rem;
+    font-family:Prata;
+    color: white;
+    text-align: left;
+}
+
+footer{
+    color: white;
+    font-family: Prata;
+    background-image: url(./images/pattern-01-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .container{
+    padding: 3rem;
+    background-color: #353530;
+}
+footer span{
+    margin: 0 1rem;
+}
+footer .grey{
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer .logo_img{
+    width: 35rem;
+}
+footer .grey:hover,footer i:hover{
+    color: #f9d261;
+}
+footer .bg_icons i{
+    background-color: #1C1B19;
+    padding: 1rem;
+    font-size: 1.6rem;
+    transition: 0.5s;
+}
+footer .bg_icons i:hover{
+    background-color: #f9d261;
+    color: initial;
+}
+/*carousel css starting from here  */
+.p0 {
+    padding: 0;
+}.resCarousel-inner .item {
+    text-align: center;
+}
+.item .tile img{
+    height: 20rem;
+}
+.resCarousel-inner .item .tile div,
+.banner .item div {
+    display: table;
+    width: 100%;
+    min-height: 25rem;
+    text-align: center;
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/
+}
+
+.resCarousel-inner .item h1 {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+.item div h1 {
+    background: rgba(0, 0, 0, .4);
+}
+.leftRs,.rightRs{
+    color: #f9d261;
+    font-size: 2.5rem;
+    background: transparent;
+}
+
+.leftRs{
+    margin-left: -4.5rem;
+}
+.leftRs:hover,.rightRs:hover{
+    color: #f9d261;
+}
+.rightRs{
+    margin-right: -4.5rem;
+}
+/*carousel css is ending here  */
+.header_bg{
+    position: relative; 
+     z-index: 6;
+    margin-top: -2rem;
+    background-image: url(../images/subheader-bakcground.png);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+.bg_header_text{
+    color: aliceblue;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Prata;
+}
+button:focus{
+    outline: none;
+}
+.outer_bg_header_box{
+    height: 8rem;
+    width: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+ 
+}
+.bg_header_box{
+    /* margin-top: 8.5rem; */
+    background-color: #353530;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    display: inline-block;
+    font-family: rubik;
+  
+}
+.bg_header_box .dot{
+    background-color: #f9d261;
+    height: .6rem;
+    width: .6rem;
+    margin: 0 0.4rem;
+    display: inline-block;
+}
+.yellow{
+    font-family: Prata;
+    color: #f9d261;
+}
+.bg_header_box a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.bg_header_box a:hover{
+    color: #f9d261;
+}
+.bg_header_text h1{
+    font-size: 5.5rem;
+}
+.box{
+    cursor: pointer;
+    /* width: 37rem; */
+    margin: .5rem ;
+    text-align: center;
+    background-color: #353530;
+    color: white;
+    font-family: Prata;
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    transition: 0.5s;
+    border: 1px solid #353530;
+    
+}
+.box:hover{
+    border: 1px solid #f9d261;
+    box-shadow: 0 0 1rem #f9d261;
+    color: #f9d261;
+    background-color: #1C1B19;
+}
+
+.big_icon{
+    font-size: 3.5rem;
+    color: #f9d261 ;
+}
+i:hover{
+    cursor: pointer;
+}
+.bg_dark{
+    background-color: #353530;
+    padding: 8rem;
+}
+.contact_form input,textarea{
+    width: 100%;
+    background-color: #1C1B19;
+    border: none;
+    margin: 1rem 0;
+    padding: 2rem 0 2rem 5rem;
+    font-size: 1.6rem;
+    color: white;
+    font-family: Prata;
+}
+.contact_form input:focus,textarea:focus{
+    outline: none;
+}
+.contact_form span i{
+    position: absolute;
+    margin:3.5rem 0 0 2rem;
+    color: #f9d261;
+}
+.contact_btn{
+    margin-top: 1.5rem;
+    font-family: Rubik;
+    background-color: #f9d261;
+    color: black;
+    border: 2px solid #f9d261;
+    padding: 1.5rem 4rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.contact_btn:hover{
+    background-color: #f9d361cc;
+}
+.Prata{
+    font-family: Rubik;
+}
+h5{
+    padding: 5rem 2rem;
+    font-family: Prata;
+}
+.pt-100{
+    padding-top: 14rem;
+}
+.mt-60{
+    margin-top: 6rem;
+}
+
+ul li{
+    list-style: none;
+    font-weight: normal;
+}
+.about h3{
+    font-weight: normal;
+}
+
+.about ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f9d261; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1rem; /* Also needed for space (tweak if needed) */
+    margin-right: 1rem; 
+}
+footer .map iframe {
+    margin-top: -10rem;
+    width: 90%;
+}
+footer ul li a{
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer ul li a:hover{
+    color: #f9d261;
+    text-decoration: none;
+}
+.banner {
+    background: var(--clr-white);
+    padding: 4rem 0;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    text-align: center;
+    width: 90vw;
+    max-width: var(--fixed-width);
+}
+.modal-btn {
+    margin-top: 2rem;
+    background: var(--clr-primary-5);
+    border-color: var(--clr-primary-5);
+    color: var(--clr-white);
+}
+.modal-btn:hover {
+    background: transparent;
+    color: var(--clr-primary-5);
+}
+.modal-overlay{
+    background-color: #1c1b19af;
+    visibility: hidden;
+    z-index: -100;
+    position: fixed;
+    padding-top: 10rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+.modal-overlay img{
+    width: 60rem;
+    height: 40rem;
+}
+/* OPEN/CLOSE MODAL */
+.open-modal {
+    visibility: visible;
+    z-index: 101;
+}
+.modal-container {
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 90%;
+    
+    
+}
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    background: transparent;
+    border-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color:darkred;
+    transform: scale(1.3);
+}
+@media screen and (max-width:450px) {
+    .about ul li::before{
+        list-style: none !important;
+        display: none !important;
+        content: none;
+    }
+    .slideshow{
+        height: 25rem;
+    }    
+    .leftRs,.rightRs{
+        display: none;
+    }
+    nav{
+        height: initial;
+    }
+    footer .map iframe {
+        margin-top: 0rem;
+        
+    }
+    nav{
+        margin: 0;
+        color: #f9d261;
+    }
+    .hero_main h1{
+        font-size:3.6rem;
+    }
+    .hero_main .buttons button{
+        margin: 0 .8rem;
+        padding: 1rem;
+    }
+    .navbar-nav{
+        background-color: #353530;
+        z-index: 4;
+        position: relative;
+        width: 100%;
+    }
+    .d_none{
+        display: none;
+    }
+    .bg_dark {
+        padding: 3rem;
+    }
+    main{
+        margin-top: 10rem;
+    }
+    .bg_header_box{
+        margin-top: 0px;
+    }    
+    .contact_form input,.contact_form textarea{
+        padding: 1.5rem 0 1.5rem 5rem;
+    }
+} 
